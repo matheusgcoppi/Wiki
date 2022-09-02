@@ -9,12 +9,8 @@
 
     <ul>
         {% for entry in entries %}
-            <li><a href="{% url 'html' %}/{{ entry }}">{{ entry }}</a></li>
-            <li><a href="{% url 'css' %}/{{ entry }}">{{ entry }}</a></li>
-            <li><a href="{% url 'django' %}/{{ entry }}">{{ entry }}</a></li>
-            <li><a href="{% url 'git' %}/{{ entry }}">{{ entry }}</a></li>
-            <li><a href="{% url 'python' %}/{{ entry }}">{{ entry }}</a></li>
-            
+            <li>{{ entry }}</li>
+       
         {% endfor %}
     </ul>
 

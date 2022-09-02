@@ -10,20 +10,12 @@ def index(request):
         
     })
 
-def css(request):
-    return render(request, "entries/CSS.md")
+def language(request):
+    return render(request, "encyclopedia/index.html"), {
+        "save": save_entry()
+    }
 
-def django(request):
-    return render(request, "entries/Django.md")
 
-def git(request):
-    return render(request, "entries/Git.md")
-
-def html(request):
-    return render(request, "entries/HTML.md")
-
-def python(request):
-    return render(request, "entries/Python.md")
         
     
 
