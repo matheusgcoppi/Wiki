@@ -6,14 +6,15 @@ from . import util
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
-        "entries": util.list_entries()
-        
+        "entries": util.list_entries()  
     })
 
-def language(request):
-    return render(request, "encyclopedia/index.html"), {
-        "save": save_entry()
-    }
+def get(request):
+    return render(request, "encyclopedia/index.html", {
+        "get": util.get_entries()  
+    })
+
+
 
 
         
